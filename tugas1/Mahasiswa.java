@@ -13,7 +13,7 @@ public class Mahasiswa {
         System.out.print("Nama  Lengkap                     = ");
         String name = scanner.nextLine();
 
-        System.out.print("Berapa nilai yang akan diinputkan  ");
+        System.out.print("Berapa nilai yang akan diinputkan = ");
 
         int batas = scanner.nextInt();
 
@@ -25,14 +25,15 @@ public class Mahasiswa {
                 i = i-1;
             }
         }
-
+        System.out.println("============================================");
         System.out.println("Nama              = " + name);
         System.out.println("Nilai Rata - Rata = " + rata2(batas));
         System.out.println("Nilai Terendah    = " + min(batas));
         System.out.println("Nilai Tertinggi   = " + max(batas));
+        System.out.println("=============================================");
     }
 
-    static float rata2(int batas) {
+    private static float rata2(int batas) {
         float rata = 0;
         for (int i = 1; i <= batas; i++) {
             rata += nilai[i];
@@ -40,7 +41,7 @@ public class Mahasiswa {
         return rata / batas;
     }
 
-    static float max(int batas) {
+    private static float max(int batas) {
         float max = 0;
         for (int i = 1; i <= batas; i++) {
             if (max < nilai[i]) {
@@ -50,7 +51,7 @@ public class Mahasiswa {
         return max;
     }
 
-    static float min(int batas) {
+    private static float min(int batas) {
         float min = 110;
         for (int i = 1; i <= batas; i++) {
             if (min > nilai[i]) {
