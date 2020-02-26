@@ -2,8 +2,10 @@ package tugas2.bangundatar;
 
 import static java.lang.Math.sqrt;
 
-public class Segitiga {
+public class SegitigaSSisi {
     public static double alas, tinggi;
+
+    protected static double ssmiring;
 
     public double getLuas() {
         return luas;
@@ -20,6 +22,7 @@ public class Segitiga {
     }
 
     public void hitungKeliling() {
-        keliling = alas + tinggi + (sqrt(alas * alas + tinggi * tinggi));
+        ssmiring = sqrt(alas * alas + tinggi * tinggi);
+        keliling = alas + tinggi + ssmiring;
     }
 }

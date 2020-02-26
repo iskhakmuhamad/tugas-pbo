@@ -1,6 +1,8 @@
 package tugas2;
 
 import tugas2.bangundatar.Persegi;
+import tugas2.bangundatar.PersegiPanjang;
+import tugas2.bangundatar.SegitigaSSisi;
 import tugas2.bangunruang.Kubus;
 
 import java.util.Scanner;
@@ -30,8 +32,22 @@ public class Main {
                 pilBangun = scanner.nextInt();
                 switch (pilBangun) {
                     case 1:
+                        System.out.println("========================================");
                         System.out.println("Hitung Luas dan Keliling Segitiga");
-                        System.out.print("Masukan Alas Segitiga = ");
+                        System.out.print("Alas Segitiga = ");
+                        SegitigaSSisi.alas = scanner.nextDouble();
+                        System.out.print("Tinggi Segitiga = ");
+                        SegitigaSSisi.tinggi = scanner.nextDouble();
+
+                        SegitigaSSisi segitigaSSisi = new SegitigaSSisi();
+                        segitigaSSisi.hitungKeliling();
+                        segitigaSSisi.hitungLuas();
+
+                        System.out.println("=========================================");
+                        System.out.println("                HASIL                  ");
+                        System.out.println("Keliling Segitiga       = " + segitigaSSisi.getKeliling());
+                        System.out.println("Luas Segitiga = " + segitigaSSisi.getLuas());
+                        System.out.println("=========================================");
                         break;
                     case 2:
                         System.out.println("========================================");
@@ -44,11 +60,29 @@ public class Main {
                         System.out.println("                HASIL                  ");
                         System.out.println("Keliling Persegi       = " + persegi.getKelilingPersegi());
                         persegi.hitungLuas();
-                        System.out.println("Luas Permukaan Persegi = " + persegi.getLuasPersegi());
+                        System.out.println("Luas Persegi           = " + persegi.getLuasPersegi());
                         System.out.println("=========================================");
                         break;
                     case 3:
+                        System.out.println("========================================");
+                        System.out.println("Hitung Luas dan Keliling Persegi Panjang");
+                        System.out.print("Panjang Persegi Panjang = ");
+                        PersegiPanjang.panjang = scanner.nextDouble();
+                        System.out.print("Lebar Persegi Panjang = ");
+                        PersegiPanjang.lebar = scanner.nextDouble();
+
+                        PersegiPanjang persegiPanjang = new PersegiPanjang();
+                        persegiPanjang.hitungKeliling();
+                        persegiPanjang.hitungLuas();
+
+                        System.out.println("=========================================");
+                        System.out.println("                HASIL                  ");
+                        System.out.println("Keliling Persegi Panjang       = " + persegiPanjang.getKeliling());
+                        System.out.println("Luas Persegi Panjang           = " + persegiPanjang.getLuas());
+                        System.out.println("=========================================");
                         break;
+                    default:
+                        System.out.println("Maaf Anda Salah Input");
                 }
             } else if (pilDimensi == 2) {
                 System.out.println("--------------------------------------------------------------");

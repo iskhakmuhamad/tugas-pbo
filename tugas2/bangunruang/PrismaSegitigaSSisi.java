@@ -1,8 +1,8 @@
 package tugas2.bangunruang;
 
-import tugas2.bangundatar.Segitiga;
+import tugas2.bangundatar.SegitigaSSisi;
 
-public class PrismaSegitiga extends Segitiga {
+public class PrismaSegitigaSSisi extends SegitigaSSisi {
     public static double volume, tinggi;
     public static double luas;
 
