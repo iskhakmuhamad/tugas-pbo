@@ -154,9 +154,9 @@ public class Main {
                             System.out.println("Luas Permukaan Kubus = " + Kubus.luasKubus);
                             System.out.println("Volume Kubus         = " + Kubus.volumeKubus);
                         } else {
-                            System.out.print("Masukan Panjang Alas Persegi = ");
+                            System.out.print("Masukan Panjang Kubus = ");
                             Persegi.sisi = scanner.nextInt();
-                            System.out.print("Masukan Tinggi Limas Persegi = ");
+                            System.out.print("Masukan Tinggi Kubus  = ");
                             LimasPersegi.tinggi = scanner.nextInt();
 
                             LimasPersegi limasPersegi = new LimasPersegi();
