@@ -10,6 +10,7 @@ public class LimasSegitiga extends Segitiga {
 
     @Override
     public void hitungLuas() {
+        super.hitungLuas();
         double sMiring1, sMiring2, sMiring3;
         sMiring1 = sqrt(alas / 2 * alas / 2 + tinggi * tinggi);
         sMiring2 = sqrt(Segitiga.tinggi / 2 * Segitiga.tinggi / 2 + tinggi * tinggi);
@@ -18,6 +19,7 @@ public class LimasSegitiga extends Segitiga {
     }
 
     public void hitungVolume() {
+        super.hitungLuas();
         volume = super.getLuas() * tinggi / 6;
     }
 }

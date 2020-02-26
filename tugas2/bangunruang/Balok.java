@@ -7,10 +7,12 @@ public class Balok extends PersegiPanjang {
 
     @Override
     public void hitungLuas() {
+        super.hitungLuas();
         luasPermukaan = 2 * (PersegiPanjang.lebar * tinggi + PersegiPanjang.panjang *tinggi + super.getLuas());
     }
 
     public void hitungVolume(){
+        super.hitungLuas();
         volume = super.getLuas() * tinggi;
     }
 

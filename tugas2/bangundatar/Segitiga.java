@@ -5,7 +5,7 @@ import static java.lang.Math.sqrt;
 public class Segitiga {
     public static double alas, tinggi;
 
-    protected static double ssmiring;
+    public static double ssmiring;
 
     public double getLuas() {
         return luas;

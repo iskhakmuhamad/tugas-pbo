@@ -34,7 +34,7 @@ public class Main {
                     case 1:
                         System.out.println("========================================");
                         System.out.println("Hitung Luas dan Keliling Segitiga");
-                        System.out.print("Alas Segitiga = ");
+                        System.out.print("Alas Segitiga   = ");
                         Segitiga.alas = scanner.nextDouble();
                         System.out.print("Tinggi Segitiga = ");
                         Segitiga.tinggi = scanner.nextDouble();
@@ -46,7 +46,7 @@ public class Main {
                         System.out.println("=========================================");
                         System.out.println("                HASIL                  ");
                         System.out.println("Keliling Segitiga       = " + segitiga.getKeliling());
-                        System.out.println("Luas Segitiga = " + segitiga.getLuas());
+                        System.out.println("Luas Segitiga           = " + segitiga.getLuas());
                         break;
                     case 2:
                         System.out.println("========================================");
@@ -66,7 +66,7 @@ public class Main {
                         System.out.println("Hitung Luas dan Keliling Persegi Panjang");
                         System.out.print("Panjang Persegi Panjang = ");
                         PersegiPanjang.panjang = scanner.nextDouble();
-                        System.out.print("Lebar Persegi Panjang = ");
+                        System.out.print("Lebar Persegi Panjang   = ");
                         PersegiPanjang.lebar = scanner.nextDouble();
 
                         PersegiPanjang persegiPanjang = new PersegiPanjang();
@@ -100,14 +100,15 @@ public class Main {
                         if (pilBangun == 1) {
                             System.out.println("========================================");
                             System.out.println("Hitung Luas dan Volume Prisma Segitiga");
-                            System.out.print("Alas Segitiga = ");
+                            System.out.print("Alas Segitiga            = ");
                             Segitiga.alas = scanner.nextDouble();
-                            System.out.print("Tinggi Segitiga = ");
+                            System.out.print("Tinggi Segitiga          = ");
                             Segitiga.tinggi = scanner.nextDouble();
-                            System.out.print("Tinggi  Prisma Segitiga = ");
+                            System.out.print("Tinggi  Prisma Segitiga  = ");
                             PrismaSegitiga.tinggi = scanner.nextDouble();
 
                             Segitiga segitiga = new Segitiga();
+                            segitiga.hitungKeliling();
                             segitiga.hitungLuas();
                             PrismaSegitiga prismaSegitiga = new PrismaSegitiga();
                             prismaSegitiga.hitungLuas();
@@ -128,6 +129,7 @@ public class Main {
                             PrismaSegitiga.tinggi = scanner.nextDouble();
 
                             Segitiga segitiga = new Segitiga();
+                            segitiga.hitungKeliling();
                             segitiga.hitungLuas();
                             LimasSegitiga limasSegitiga = new LimasSegitiga();
                             limasSegitiga.hitungLuas();
@@ -149,9 +151,9 @@ public class Main {
                         if (pilBangun == 1) {
                             System.out.print("Masukan Panjang Sisi Kubus = ");
                             Persegi.sisi = scanner.nextInt();
+                            Kubus kubus = new Kubus();
                             Persegi persegi = new Persegi();
                             persegi.hitungLuas();
-                            Kubus kubus = new Kubus();
                             kubus.hitungLuas();
                             kubus.hitungVolume();
                             System.out.println("=================================================");
@@ -191,8 +193,6 @@ public class Main {
                             System.out.print("Tinggi Balok       = ");
                             Balok.tinggi = scanner.nextDouble();
 
-                            PersegiPanjang persegiPanjang = new PersegiPanjang();
-                            persegiPanjang.hitungLuas();
                             Balok balok = new Balok();
                             balok.hitungLuas();
                             balok.hitungVolume();
