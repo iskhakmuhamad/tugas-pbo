@@ -3,8 +3,16 @@ package tugas2.bangundatar;
 public class Persegi {
 
     public static double sisi;
-    public static double luasPersegi;
-    public static double kelilingPersegi;
+
+    public double getLuasPersegi() {
+        return luasPersegi;
+    }
+
+    public double getKelilingPersegi() {
+        return kelilingPersegi;
+    }
+
+    private double luasPersegi,kelilingPersegi;
 
     public void hitungLuas(){
         luasPersegi = sisi * sisi;

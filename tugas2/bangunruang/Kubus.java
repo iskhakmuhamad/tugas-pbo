@@ -7,12 +7,11 @@ public class Kubus extends Persegi {
     public static double luasKubus;
 
     public void hitungVolume(){
-        volumeKubus = Persegi.luasPersegi * Persegi.sisi ;
+        volumeKubus = super.getLuasPersegi() * Persegi.sisi ;
     }
 
     @Override
     public void hitungLuas() {
-        super.hitungLuas();
-        luasKubus = Persegi.luasPersegi * 6 ;
+        luasKubus = super.getLuasPersegi() * 6 ;
     }
 }

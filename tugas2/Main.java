@@ -42,9 +42,9 @@ public class Main {
                         persegi.hitungKeliling();
                         System.out.println("=========================================");
                         System.out.println("                HASIL                  ");
-                        System.out.println("Keliling Persegi       = " + Persegi.kelilingPersegi);
+                        System.out.println("Keliling Persegi       = " + persegi.getKelilingPersegi());
                         persegi.hitungLuas();
-                        System.out.println("Luas Permukaan Persegi = " + Persegi.luasPersegi);
+                        System.out.println("Luas Permukaan Persegi = " + persegi.getLuasPersegi());
                         System.out.println("=========================================");
                         break;
                     case 3:
