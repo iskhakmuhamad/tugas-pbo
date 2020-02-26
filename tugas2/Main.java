@@ -107,9 +107,6 @@ public class Main {
                             System.out.print("Tinggi  Prisma Segitiga  = ");
                             PrismaSegitiga.tinggi = scanner.nextDouble();
 
-                            Segitiga segitiga = new Segitiga();
-                            segitiga.hitungKeliling();
-                            segitiga.hitungLuas();
                             PrismaSegitiga prismaSegitiga = new PrismaSegitiga();
                             prismaSegitiga.hitungLuas();
                             prismaSegitiga.hitungVolume();
@@ -121,16 +118,13 @@ public class Main {
                         } else {
                             System.out.println("========================================");
                             System.out.println("Hitung Luas dan Volume Limas Segitiga");
-                            System.out.print("Alas Segitiga = ");
+                            System.out.print("Alas Segitiga           = ");
                             Segitiga.alas = scanner.nextDouble();
-                            System.out.print("Tinggi Segitiga = ");
+                            System.out.print("Tinggi Segitiga         = ");
                             Segitiga.tinggi = scanner.nextDouble();
                             System.out.print("Tinggi  Volume Segitiga = ");
-                            PrismaSegitiga.tinggi = scanner.nextDouble();
+                            LimasSegitiga.tinggi = scanner.nextDouble();
 
-                            Segitiga segitiga = new Segitiga();
-                            segitiga.hitungKeliling();
-                            segitiga.hitungLuas();
                             LimasSegitiga limasSegitiga = new LimasSegitiga();
                             limasSegitiga.hitungLuas();
                             limasSegitiga.hitungVolume();
@@ -151,9 +145,8 @@ public class Main {
                         if (pilBangun == 1) {
                             System.out.print("Masukan Panjang Sisi Kubus = ");
                             Persegi.sisi = scanner.nextInt();
+
                             Kubus kubus = new Kubus();
-                            Persegi persegi = new Persegi();
-                            persegi.hitungLuas();
                             kubus.hitungLuas();
                             kubus.hitungVolume();
                             System.out.println("=================================================");
@@ -165,8 +158,7 @@ public class Main {
                             Persegi.sisi = scanner.nextInt();
                             System.out.print("Masukan Tinggi Limas Persegi = ");
                             LimasPersegi.tinggi = scanner.nextInt();
-                            Persegi persegi = new Persegi();
-                            persegi.hitungLuas();
+
                             LimasPersegi limasPersegi = new LimasPersegi();
                             limasPersegi.hitungLuas();
                             limasPersegi.hitungVolume();
@@ -186,9 +178,9 @@ public class Main {
                         if (pilBangun == 1) {
                             System.out.println("========================================");
                             System.out.println("Hitung Luas dan Volume Balok");
-                            System.out.print("Panjang Balok     = ");
+                            System.out.print("Panjang Balok      = ");
                             PersegiPanjang.panjang = scanner.nextDouble();
-                            System.out.print("Lebar Balok       = ");
+                            System.out.print("Lebar Balok        = ");
                             PersegiPanjang.lebar = scanner.nextDouble();
                             System.out.print("Tinggi Balok       = ");
                             Balok.tinggi = scanner.nextDouble();
@@ -208,11 +200,9 @@ public class Main {
                             PersegiPanjang.panjang = scanner.nextDouble();
                             System.out.print("Lebar Limas Persegi Panjang       = ");
                             PersegiPanjang.lebar = scanner.nextDouble();
-                            System.out.print("Tinggi Limas Persegi Panjang       = ");
+                            System.out.print("Tinggi Limas Persegi Panjang      = ");
                             LimasPersegiPanjang.tinggi = scanner.nextDouble();
 
-                            PersegiPanjang persegiPanjang = new PersegiPanjang();
-                            persegiPanjang.hitungLuas();
                             LimasPersegiPanjang lp = new LimasPersegiPanjang();
                             lp.hitungLuas();
                             lp.hitungVolume();
