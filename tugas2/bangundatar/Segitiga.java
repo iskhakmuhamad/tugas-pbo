@@ -2,7 +2,7 @@ package tugas2.bangundatar;
 
 import static java.lang.Math.sqrt;
 
-public class SegitigaSSisi {
+public class Segitiga {
     public static double alas, tinggi;
 
     protected static double ssmiring;
