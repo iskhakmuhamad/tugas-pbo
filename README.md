@@ -1,4 +1,4 @@
-# tugas-pbo praktikum
+# <i>Tugas PBO Praktikum</i>
 <b>Tugas 1 : Pengenalan input output dan syntax standar dasar</b>
 <br>implementasi : 
 percabangan, looping, function, array
