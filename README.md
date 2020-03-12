@@ -20,4 +20,5 @@ Class & Implements interface
 <br>implementasi : 
 Jframe
 <br>Simple form registration
-<br> ![Screenshot Tugas 4](https://github.com/iskhakmuhamad/tugas-pbo/blob/master/tugas4/tugas4.png =250x250)
+<br> <img src="https://github.com/iskhakmuhamad/tugas-pbo/blob/master/tugas4/tugas4.png" alt ="Screenshot Tugas 4" 
+data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" height="350" />
