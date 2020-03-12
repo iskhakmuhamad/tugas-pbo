@@ -15,3 +15,9 @@ Pembuatan Objek
 <br>implementasi : 
 Class & Implements interface
 <br>Duck Status in Game
+
+<b>Tugas 4 : SWING</b>
+<br>implementasi : 
+Jframe
+<br>Simple form registration
+<br> <img src="tuga4/tugas4.png" /> 
