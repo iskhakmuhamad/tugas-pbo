@@ -1,7 +1,8 @@
 # <i>Tugas PBO Praktikum</i>
 <b><i>Nama : Muhamad Iskhak <i><b>
 <br><b><i>Nim  : 123180089 <i><b>
-<b>Tugas 1 : Pengenalan input output dan syntax standar dasar</b>
+  
+<br><br><b>Tugas 1 : Pengenalan input output dan syntax standar dasar</b>
 <br>implementasi : 
 percabangan, looping, function, array
 <br>Hitung Rata, Min, Max
